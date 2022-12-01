@@ -1,8 +1,33 @@
 body {
   background-color:seagreen;
+  font-style:italic;
+  width: 90%;
+  margin: auto;
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 50px;
 }
 
+h2 {
+  background-color: gray;
+  font-size: 20px;
+}
+
+h3 {
+  background-color: gray;
+  font-size: 20px;
+}
+
+h4 {
+  background-color: gray;
+  font-size: 20px
+}
+
+ol {
+  list-style-type: numbers; 
+}
+
+ul {
+  list-style-type: square;
+}
