@@ -12,17 +12,19 @@ function userName() {
   let userName = prompt('What is your name');
 
   alert(`Welcome to my site ${userName}! Please answer the following questions with yes/no or y/n`);
+
 }
+
 
 userName();
 
 function homeState() {
-  let questionOneresponse = prompt ('Was I born in Washington?').toLowerCase();
+  let questionOneResponse = prompt ('Was I born in Washington?').toLowerCase();
 
-  if(questionOneresponse === 'yes' || questionOneresponse ==='y') {
+  if(questionOneResponse === 'yes' || questionOneResponse ==='y') {
     alert('You got it right!');
     score++;
-  } else if(questionOneresponse === 'no' || questionOneresponse === 'n') {
+  } else if(questionOneResponse === 'no' || questionOneResponse === 'n') {
     alert('Sorry, that is not correct');
   }
 }
@@ -30,38 +32,38 @@ function homeState() {
 homeState();
 
 function kids() {
-  let questionTworesponse = prompt ('Do I have kids?').toLowerCase();
+  let questionTwoResponse = prompt ('Do I have kids?').toLowerCase();
   
-  if(questionTworesponse === 'yes' || questionTworesponse === "y") {
+  if(questionTwoResponse === 'yes' || questionTwoResponse === "y") {
     alert('Yep! 3 of them in fact!');
     score++;
-  } else if(questionTworesponse === 'no' || questionTworesponse === "n") {
+  } else if(questionTwoResponse === 'no' || questionTwoResponse === "n") {
     alert('Actually I do!');
   }
 }
 
 kids();
 
-function location() {
-  let questionThreeresponse = prompt ('Have I lived outside the state of Washington?').toLowerCase();
+function questionThree() {
+  let questionThreeResponse = prompt ('Have I lived outside the state of Washington?').toLowerCase();
   
-  if(questionThreeresponse === 'yes' || questionThreeresponse === 'y') {
+  if(questionThreeResponse === 'yes' || questionThreeResponse === 'y') {
     alert('Good guess!');
     score++;
-  } else if(questionThreeresponse === 'no' || questionThreeresponse === 'n') {
+  } else if(questionThreeResponse === 'no' || questionThreeResponse === 'n') {
     alert('Better luck next time. Onto the next question!');
   }
 }
 
-location();
+questionThree();
 
 function family() {
-  let questionFourresponse = prompt ('Do I live near family?').toLowerCase();
+  let questionFourResponse = prompt ('Do I live near family?').toLowerCase();
   
-  if(questionFourresponse === 'yes' || questionFourresponse === 'y') {
+  if(questionFourResponse === 'yes' || questionFourResponse === 'y') {
     alert('I do');
     score++;
-  } else if(questionFourresponse === 'no' || questionFourresponse === 'n') {
+  } else if(questionFourResponse === 'no' || questionFourResponse === 'n') {
     alert('I actually do. I think I would go kooky if I did not have family support nearby!');
   }
 }
@@ -69,12 +71,12 @@ function family() {
 family();
 
 function relationshipStatus() {
-  let questionFiveresponse = prompt ('Am I married?').toLowerCase();
+  let questionFiveResponse = prompt ('Am I married?').toLowerCase();
   
-  if(questionFiveresponse === 'yes' || questionFiveresponse === 'y') {
+  if(questionFiveResponse === 'yes' || questionFiveResponse === 'y') {
     alert('Yes! I have been married for 11 years');
     score++;
-  } else if(questionFiveresponse === 'no' || questionFiveresponse === 'n') {
+  } else if(questionFiveResponse === 'no' || questionFiveResponse === 'n') {
     alert('Oh yes I am! I have been married for 11 years');
   }
 }
@@ -92,15 +94,15 @@ function numberGame() {
   
   for (let i = 0; i < 4; i++) { 
     
-    let question6response = prompt ('What number am I thinking of?');
+    let question6Response = prompt ('What number am I thinking of?');
     // Runs 4 times, with values of step 0 through 4.
-    if (question6response === myNum) {
+    if (question6Response === myNum) {
       alert('That is correct');
       score++;
       break;
-    } else if(question6response >myNum) {
+    } else if(question6Response >myNum) {
       alert('too high');
-    } else if(question6response <myNum) {
+    } else if(question6Response <myNum) {
       alert('too low');
     }
     if (i === 3) {
@@ -116,13 +118,13 @@ function destinations() {
   
   for (let i = 0; i < 6; i++) {
   
-    let questionSevenresponse = prompt ('Where do I want to visit?').toLowerCase(); 
+    let questionSevenResponse = prompt ('Where do I want to visit?').toLowerCase(); 
   
-    if ( destinations.indexOf(questionSevenresponse) >= 0 ) {
+    if ( destinations.indexOf(questionSevenResponse) >= 0 ) {
       alert ('You were right!');
       score++;
       break;
-    } else if (destinations.indexOf(questionSevenresponse) === -1) {
+    } else if (destinations.indexOf(questionSevenResponse) === -1) {
       alert('Try again');
     }
     
